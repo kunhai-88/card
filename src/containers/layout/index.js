@@ -12,9 +12,7 @@ export default ({ children }) => (
     <Layout className={styles.Layout}>
       <Header />
       <Content className={styles.Content}>{children}</Content>
-      <Footer style={{ textAlign: "center" }}>
-        书签 ©2019 Created by Andy
-      </Footer>
+      <Footer style={{ textAlign: "center" }} />
     </Layout>
   </Router>
 );

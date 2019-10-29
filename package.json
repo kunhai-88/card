@@ -40,15 +40,10 @@
     "webpack-dev-server": "^3.3.1"
   },
   "scripts": {
-    "build": "better-npm-run md2json && better-npm-run build && cpy public/icon.png docs",
-    "start": "better-npm-run md2json && better-npm-run start",
-    "md2json": "better-npm-run md2json"
+    "build": "better-npm-run build && cpy public/icon.png docs",
+    "start": "better-npm-run start"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run build"
-    }
-  },
+   
   "betterScripts": {
     "build": {
       "command": "babel-node --max_old_space_size=4096 ./node_modules/webpack-cli/bin/cli.js --config ./webpack.js --progress --colors --display-error-details",
